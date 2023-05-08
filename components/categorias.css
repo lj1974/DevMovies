@@ -1,0 +1,34 @@
+.categoria {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+
+    position: relative;
+}
+
+.categoria .tags {
+    display: flex;
+    gap: 15px;
+}
+
+.categoria .tags button {
+    gap: 15px;
+}
+
+.categoria .tags .btn_terciario.um {
+    padding: 7px 12px;
+}
+
+.cat_menu_ham {
+    display: block;
+    padding: 20px;
+    background-color: var(--azulescuro); 
+
+    position: absolute;
+    top: 3rem;
+    right: 0rem;
+
+    border-radius: var(--radius);
+
+}

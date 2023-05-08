@@ -1,0 +1,294 @@
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+
+.box_midiainfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--branco);
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    padding: 0;
+}
+
+.background_midiainfo .azulclaro { 
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: var(--azulclaro);
+    z-index: -1;
+}
+
+
+.background_midiainfo .azulescuro { 
+    height: 100vh;
+    width: 70%;
+    position: absolute;
+    background-color: var(--azulescuro);
+    border-radius: var(--radius);
+    top: 6rem;
+    right: 0;
+    z-index: -1;
+}
+
+
+.conteudo {
+    background-color: var(--background);
+    width: 75%;
+    border-radius: var(--radius);
+
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.conteudo::-webkit-scrollbar {
+    width: 15px;
+    background-color: transparent;
+}
+.conteudo::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: var(--azulclaro);
+    border-radius: var(--radius);
+}
+
+.conteudo > .l1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.l1 {
+    position: relative;
+    display: inline-block;
+    object-fit: cover;
+    z-index: 0;
+}
+
+input[type="file"]:hover, input[type="file"]:focus { 
+    cursor: pointer;
+}
+
+input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#camera {
+    position: absolute;
+    top: 50%;
+    left: 60px;
+}
+
+.descricao {
+   margin-bottom: 1rem;
+   padding: 0 1rem;
+}
+
+
+
+.conteudo .nome {
+    justify-content: center;
+    margin-top: 2rem;
+    z-index: 9999;
+    font: var(--font32);
+    margin: 2rem;
+    overflow: hidden;
+
+    background-color: var(--azulclaro);
+}
+
+
+.conteudo .nome h3 {
+    padding-top: 10px;
+    margin-bottom: 1rem;
+}
+
+.conteudo p {
+    background-color: var(--azulclaro);
+}
+
+.capa {
+    width: 210px;
+    height: 320px;
+    margin-top: 5rem;
+    outline: 4px solid var(--azulclaro);
+    opacity: var(--opacity);
+}
+
+
+
+.streamers {
+    display: flex;
+    color: var(--azulclaro);
+   justify-content: space-evenly;
+   align-items: center;
+   position: relative;
+   width: 100%;
+   margin-top: 1rem;
+}
+
+.streamers li {
+    list-style: none;
+    text-decoration: underline;
+  font: var(--font4);
+  background-color: var(--azulclaro);
+  color: var(--branco);
+
+}
+
+
+.avaliacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    gap: 15px;
+
+    margin-bottom: 2rem;
+
+    margin-top: 2.4rem;
+   
+
+}
+
+.avaliacoes button {
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width: 800px){ 
+
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .box_midiainfo {
+        overflow-y: hidden;
+    }
+   .conteudo {
+    margin-top: 0rem;
+    position: relative;
+    padding: 1rem;
+    height: 80vh;
+
+   } 
+
+
+   .l1 {
+    margin-left: 6rem;
+   }
+
+   
+    .descricao {
+    margin: 0 3rem;
+    }
+
+   .fechar {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.fechar:hover, .fechar:focus { 
+    cursor: pointer;
+    opacity: 60%;
+}
+
+
+.background_midiainfo .azulclaro {
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+}
+
+@media  (min-width: 800px){
+
+    .fechar {
+        display: none;
+    }
+    .conteudo {
+        flex-direction: row;
+        align-items: center;
+        padding: 1.5rem;
+
+    }
+
+    .descricao {
+        margin: 0 2rem;
+    }
+    .h3 {
+        margin-top: 2rem;
+    }
+
+    .capa {
+        margin-top: 1rem;
+    }
+    
+    .box_midiainfo {
+        max-width: 1300px;
+        max-height: 400px;
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: row;
+    }
+
+.background_midiainfo .azulclaro {
+    width: 80%;
+    height: 100%;
+    right: 9.5rem;
+    top: -2em;
+    border-radius: var(--radius);
+}
+
+.background_midiainfo .azulescuro {
+    width: 80%;
+    top: 2rem;
+   left: 10rem;
+    height: 100%;
+}
+
+.avaliacoes {
+    margin-bottom: 1rem;
+}
+}

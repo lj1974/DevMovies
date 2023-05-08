@@ -1,0 +1,77 @@
+.pop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    border-radius: var(--radius);
+}
+
+.ajuda {
+    background-color: var(--azulescuro);
+    width: 224px;
+    height: 157px;
+    padding: 0.5rem;
+
+}
+
+.ajuda h4 {
+    width: 80%;
+    font: var(--font5);
+}
+
+.btn_categoria {
+    background-color: var(--azulescuro);
+    width: 120px;
+    height: 30px;
+}
+
+.btn_categoria h5 {
+    font: var(--font42);
+}
+
+.feedback {
+    background-color: var(--azulclaro);
+    width: 287px;
+    height: 25px;
+}
+
+.feedback  h5 {
+    font: var(--font42);
+}
+
+.pop.pag {
+    max-width: 670px;
+    padding: 35px 0;
+    color: var(--branco);
+   
+    flex-direction: column;
+    background-color: var(--azulclaro);
+    gap: 20px;
+
+}
+
+.pop.pag h2 {
+    font: var(--font4);
+}
+.pop.pag .l2 {
+    display: flex;
+    gap: 10px;
+}
+
+.pop.pag .l2 .btn_secundario:last-child {
+    background-color: var(--azulescuro);
+    color: var(--branco);
+}
+
+.pop.pag .l2 .btn_secundario:last-child:hover,
+.pop.pag .l2 .btn_secundario:last-child:focus,
+.pop.pag .l2 .btn_secundario:last-child:active {
+    background-color: var(--azulescurosessenta);
+}
+
+
+@media (max-width: 600px){
+    .pop.pag {
+        max-width: 420px;
+    }
+}

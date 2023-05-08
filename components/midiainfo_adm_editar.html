@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="midiainfo_adm_editar.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="box_midiainfo">   
+        <div class="background_midiainfo">
+            <div class="azulclaro"></div>
+            <div class="azulescuro"></div>
+        </div>
+        <div class="conteudo">
+
+            <img src="./assets/excluirazul.svg" alt="fechar tela" class="fechar">
+
+
+            <form action="">
+
+                <!-- fazer a foto da .capa trocar para a nova escolhida -->
+                <div class="l1">
+                    <img src="./assets/capateste.jpg" alt="capa da midia" class="capa">
+                    <input type="file" accept="image/*">
+                    <img id="camera" src="./assets/camera.svg" alt="clique para mudar a capa">
+                </div>
+
+                <!-- l2 é o mesmo que tem em historico. o que muda é a posição do nome/capa -->
+                <div class="l2">
+                    <h3 contentEditable="true" class="nome">Como treinar seu dragao 2  <span class="ano" contentEditable="false">(<span id="ano" contentEditable="true">2007</span>)</span></h3>
+                    <p contentEditable="true" class="descricao">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cum commodi voluptatibus ducimus recusandae sapiente cumque ipsum! Unde aliquid qui ea blanditiis. Nisi iure dolore officia commodi ipsam qui a?
+                    </p>
+
+                    <ul class="streamers">
+                        <li class="a">Netflix</li>
+                        <li class="a">Star+</li>
+                        <li class="a">Globo Play</li>
+                        <img src="./assets/plus.svg" alt="adicionar streamer">
+                    </ul>
+
+                    <div class="avaliacoes">
+                        <div class="btn_terciario um">salvar</div>
+                        <div class="btn_terciario um">cancelar</div>
+                    </div>
+                </div>
+        </div>
+
+
+            </form>
+    </div>
+   
+</body>

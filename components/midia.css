@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+.midias {
+    display: grid;
+    align-items: center;
+    max-width: 77vw;
+    grid-template-columns: repeat(auto-fit, 180px);
+    grid-gap: 25px;
+}
+
+.midia_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    --w: 176px;
+    --h:  235px;
+    width: var(--w);
+    height:var(--h);
+}
+
+.midia_box .nome {
+    color: var(--branco);
+    position: absolute;
+    padding: 10px 15px;
+    bottom: 1rem;
+    max-height: 19%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+    font: var(--font5);
+}
+.midia_box .capa {
+    --w: 176px;
+    --h:  235px;
+    width: var(--w);
+    height:var(--h);
+}
+
+.capa:hover, .capa:focus, .capa:active {
+    width: calc( var(--w) + 10%);
+    height: calc( var(--h) + 10%);
+}
+
+
+.midia_box:hover, .midia_box:focus, .midia_box:active {
+    width: calc( var(--w) + 10%);
+    height: calc( var(--h) + 10%);
+    opacity: 60%;
+}
