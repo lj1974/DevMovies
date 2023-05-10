@@ -1,8 +1,15 @@
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.titulo {
+    color: var(--branco);
+}
+
+.c1 {
+    margin-top: 10rem;
+}
+.c1 .titulo {
+    font: var(--font2);
+    margin-bottom: 1rem;
+    margin-left: 2.2rem;
 }
 
 .ultimoadd {
@@ -87,9 +94,19 @@ body {
     display: flex;
     flex-direction: column;
     width: 77vw;
-align-items: center;
-gap: 20px;
+    align-items: center;
+    gap: 20px;
 }
+
+.c2 {
+    margin-top: 3rem;
+}
+
+.c2 .titulo {
+    font: var(--font2);
+    margin-bottom: 1rem;
+}
+
 .moderacao img {
     width: 83px;
     height: 56px;
@@ -111,6 +128,7 @@ gap: 20px;
 
 .moderacao .tags {
     display: flex;
+    justify-content: flex-start;
     gap: 7px;
 }
 
@@ -122,6 +140,7 @@ gap: 20px;
 .mod_add , .mod_remov{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 2rem;
     width: 77vw; 
@@ -132,6 +151,7 @@ gap: 20px;
 
 .mod_add {
     color: var(--branco);
+    
 }
 
 .mod_remov {
@@ -144,29 +164,35 @@ gap: 20px;
 background-color: var(--cinza);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+    .moderacao .tags {
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
     .mod_add , .mod_remov{
-        flex-direction: column;
         align-items: flex-start;
         gap: 20px;
-    }
-    .moderacao .tags {
-        justify-content: flex-start;
-        width: 100%;
     }
 }
 
 
-@media (min-width: 401px ) {
+@media (min-width: 601px) {
     .moderacao .tags {
         display: flex;
         flex-direction: column;
         gap: 7px;
     }
+
+    .mod_add , .mod_remov{
+       flex-direction: row;
+        gap: 20px;
+    }
 }
 
-@media (min-width: 800px) {
-    .mod_add , .mod_remov{
+@media (min-width: 1000px) {
+    .mod_add .tags , .mod_remov .tags{
         flex-direction: row;
        align-items: center;
     }

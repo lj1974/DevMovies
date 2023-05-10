@@ -1,46 +1,33 @@
 
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    height: 100vh;
-}
-
-
 .box_midiainfo {
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     color: var(--branco);
-    position: relative;
+    position: absolute;
+    z-index: 9999;
     height: 100%;
     width: 100vw;
-    padding: 0;
+    padding: 0;  
 }
 
 .background_midiainfo .azulclaro { 
-    width: 100vw;
-    height: 100vh;
     position: absolute;
     background-color: var(--azulclaro);
     z-index: -1;
-}
+} 
 
 
 .background_midiainfo .azulescuro { 
-    height: 100vh;
-    width: 70%;
     position: absolute;
     background-color: var(--azulescuro);
     border-radius: var(--radius);
-    top: 6rem;
-    right: 0;
     z-index: -1;
-}
+} 
+
+
 
 
 .conteudo {
@@ -52,6 +39,7 @@ body {
 
     overflow: scroll;
     overflow-x: hidden;
+    position: relative;
 }
 
 .conteudo::-webkit-scrollbar {
@@ -68,6 +56,15 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.fechar {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
 
 .descricao {
    margin-bottom: 1rem;
@@ -95,7 +92,7 @@ body {
 
 
 
-.capa {
+.capa_dois {
     width: 210px;
     height: 320px;
     margin-top: 5rem;
@@ -151,6 +148,10 @@ body {
 
 @media  (max-width: 800px){ 
 
+    .box_midiainfo {
+        left: 0;
+        top: 5%;
+    }
 
     body {
         overflow-x: hidden;
@@ -172,12 +173,20 @@ body {
     padding: 0 3rem;
     }
 
-   .fechar {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
+    .background_midiainfo .azulclaro {
+        width: 70%;
+        height: 100%;
+        right: 12rem;
+        top: 2em;
+        border-radius: var(--radius);
+    }
+    
+    .background_midiainfo .azulescuro {
+        width: 70%;
+        top: 2rem;
+       left: 12rem;
+        height: 100%;
+    }
 }
 
 .fechar:hover, .fechar:focus { 
@@ -186,18 +195,16 @@ body {
 }
 
 
-.background_midiainfo .azulclaro {
-    top: 0;
-    right: 0;
-    bottom: 0;
-}
-}
-
 @media  (min-width: 800px){
 
-    .fechar {
+    /* .fechar {
         display: none;
-    }
+    } */
+
+    .box_midiainfo {
+
+        top: 30%;
+    } 
     .conteudo {
         flex-direction: row;
         align-items: center;

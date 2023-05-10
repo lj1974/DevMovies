@@ -1,8 +1,4 @@
-body {
-    display: flex;
-    justify-content: center;
-    padding-top: 5rem;
-}
+
 .midias {
     display: grid;
     align-items: center;
@@ -20,7 +16,7 @@ body {
     --w: 176px;
     --h:  235px;
     width: var(--w);
-    height:var(--h);
+    height: var(--h);
 }
 
 .midia_box .nome {
@@ -30,13 +26,12 @@ body {
     bottom: 1rem;
     max-height: 19%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.6);
-    
     font: var(--font5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
+
+
 .midia_box .capa {
-    --w: 176px;
-    --h:  235px;
     width: var(--w);
     height:var(--h);
 }
@@ -47,8 +42,9 @@ body {
 }
 
 
+
 .midia_box:hover, .midia_box:focus, .midia_box:active {
-    width: calc( var(--w) + 10%);
-    height: calc( var(--h) + 10%);
+    /* width: calc( var(--w) + 15px);
+    height: calc( var(--h) + 15px); */
     opacity: 60%;
 }

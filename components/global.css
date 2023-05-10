@@ -35,7 +35,6 @@
 
 html {
     background-color: var(--background);
-    padding: 0 25px;
 }
 
 
@@ -172,6 +171,7 @@ html {
 }
 
 .form_pesquisa input[type="search"] {
+
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -247,9 +247,6 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 71px;
-    padding-top: 38px;
-
     position: relative;
 }
 
@@ -314,6 +311,9 @@ header.hd1 .btn_primario{
 /* adicionar condição para aparecer apoenas pro adm */
 }
 
+.hd2 .l1 .logo {
+    padding-top: 12px;
+}
 .hd2 .l1 nav li:last-child::before {
     content: "";
     position: absolute;
@@ -344,11 +344,11 @@ header.hd1 .btn_primario{
     background-color: var(--azulescuro); 
 
     position: absolute;
-    top: 8rem;
+    top: 4rem;
     right: 0.5rem;
 
     width: 100px;
-
+    z-index: 9999;
     border-radius: var(--radius);
 
 }
@@ -379,6 +379,11 @@ header.hd1 .btn_primario{
         font: var(--font32);
     }
 
+    .hd2 {
+        padding: 10px 0;
+    }
+
+    
     .hd2 .l1 nav {
         display: none;
     }
@@ -389,6 +394,7 @@ header.hd1 .btn_primario{
 
     .hd2 .l2 {
         width: 70%;
+        padding-right: 10px;
     }
     .hd2 .l2 .perfil {
         width: 38px;
@@ -401,10 +407,6 @@ header.hd1 .btn_primario{
 
     .hd2 .btn_primario {
         display: none;
-    }
-
-    #menu_ham {
-        display: block;
     }
     
 

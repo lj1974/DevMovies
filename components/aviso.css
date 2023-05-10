@@ -1,0 +1,20 @@
+#aviso {
+    display: none;
+    position: relative;
+    top: 10%;
+}
+
+#aviso h1 {
+    top: 50%;
+    left: 10%;
+    width: 90%;
+    position: absolute;
+    color: var(--branco);
+    font: var(--font2);
+}
+
+@media (max-width: 600px) {
+    #aviso img {
+        transform: rotate(90deg);
+    }
+}
