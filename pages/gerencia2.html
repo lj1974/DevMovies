@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+< lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="gerencia.css">
+    <link rel="stylesheet" href="./styles/paginas.css">
+    <link rel="stylesheet" href="../components/global.css">
+    <link rel="stylesheet" href="../components/historico.css">
+    
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap">
+    
+    <title>Gerencia</title>
+</head>
+
+<body id="padrao">
+  <img id="background" src="../assets/fundo/barrasverticais.svg" alt="">
+
+    <header class="hd2">
+      <div class="l1">
+          <img src="../assets/logo.svg" alt="DevMovies" class="logo">
+          <nav >
+              <li><a navopcoes href="./home.html">Home</a></li>
+              <li><a navopcoes href="./historico.html">Histórico</a></li>
+              <li><a navopcoes href="./gerencia.html">Gerencia</a></li>
+          </nav>
+          
+      </div>
+
+      <div class="l2">
+          <form class="form_pesquisa">
+              <label for="pesquisa">
+                  <img src="../assets/lupa.svg" alt="barra de pesquisa">
+              </label>
+              <input type="search" id="pesquisa" name="pesquisa" autocomplete="off">
+            </form>
+
+
+            <img src="../assets/perfil.svg" alt="perfil do usuário" class="perfil">
+
+            <div class="menu">
+              <img class="menu_icon" src="../assets/menu.svg" alt="menu">
+              </div>
+              <button class="btn_primario">Sair</button>
+            </div>
+      </div>
+
+      <div id="menu_ham">
+          <nav>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Histórico</a></li>
+          <li style="display: none"><a href="#">Gerencia</a></li>
+          <li><a href="#">Sair</a></li>
+          </nav>
+      </div>
+    </header>
+
+      <section class="campoGerencia">
+        <div class="dropdown">
+
+          <div id="campoFilme">
+            <h5>Filmes e Séries</h5>
+            <img class="seta" src="../assets/arrow.svg" alt="seta">
+          </div>
+
+          <form id="cadastro_midia" action="">
+
+            <article class="c1">
+              <div>
+                <label for="nomemidia">nome</label>
+                <input type="text" name="nomemidia" id="nomemidia">
+              </div>
+              <div>
+                <label for="ano">ano</label>
+                <input type="text" name="ano" id="ano">
+              </div>
+            </article>
+
+            <article class="c2">
+              <aside>
+                <div>
+                  <label for="descricao">descricao</label>
+                  <textarea id="descricao" rows="4" cols="50"></textarea>
+                </div>
+             
+                <div>
+                  <label for="genero">genero</label>
+                  <input type="text" name="genero" id="genero">
+                </div>
+              </aside>
+        
+
+              <div class="preview">
+                <label for="imgcapa">capa</label>
+                <div class="preview_img">
+                  <input type="file" name="imgcapa" id="imgcapa">
+                  <img src="../assets/camera.svg" alt="clique para adicionar capa" class="camera">
+                </div>
+              </div>
+
+            </article>
+     
+            <article class="c3">
+              <div>
+                <label for="elenco">elenco</label>
+                <input type="text" name="elenco" id="elenco">
+              </div>
+          
+
+              <div>
+                <label for="streamer">streamer</label>
+              <select name="streamer" id="streamer">
+                <option value="Netflix">Netflix</option>
+                <option value="Amazon Prime">Amazon Prime</option>
+                <option value="Disney+">Disney+</option>
+                <option value="GloboPlay">GloboPlay</option>
+              </select>
+            </div>
+
+            </article>
+      
+              <button class="btn_secundario" type="submit">Cadastrar mídia</button>
+          </form>
+        </div>
+
+        <div class="dropdown">
+          <div id="campoStreamer">
+            <h5>Streamers</h5>
+            <img class="seta" src="../assets/arrow.svg" alt="seta">
+          </div>
+
+          <form id="cadastro_streamer" action="">
+            <label for="nomestreamer">nome</label>
+            <input type="text" name="nomestreamer" id="nomestreamer">
+            <label for="link">link</label>
+            <input type="text" name="link" id="link">
+      
+            <button class="btn_secundario" type="submit">Cadastrar Streamer</button>
+          </form>
+      
+        </div>
+      </section>
+    
+
+        <button class="btn_ajuda">
+          <img src="../assets/interrogacao.svg" alt="botao de ajuda">
+      </button>
+
+</body>
+<script src="./gerencia.js"></script>
+</html>
