@@ -1,0 +1,28 @@
+.cardBox {
+  width: 200px;
+  height: 270px;
+  display: flex;
+  border-radius: 10px;
+  align-items: flex-end;
+  justify-content: center;
+  transition: 0.2s;
+
+  cursor: pointer;
+
+  h1 {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.cardBox:hover {
+  width: 205px;
+  height: 285px;
+  transition: 0.2s;
+
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+
+}
