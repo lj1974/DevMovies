@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
+import { useEffect, useState } from "react";
+
 import { LogoutBtn } from "../LogoutBtn";
 import { SearchHeader } from "../SearchHeader";
 import styles from "./styles.module.css";
 import user from "../../assets/user.svg";
 import logo from "../../../public/logo.svg";
-import { useEffect, useState } from "react";
 
 export function HeaderHome({ setIsSearchFocused }) {
   const [currentUrl, setCurrentUrl] = useState("");
